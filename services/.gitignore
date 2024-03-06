@@ -1,0 +1,10 @@
+.env
+.env.qa
+.env.prod
+.dockerignore
+node_modules
+.nyc_output
+.tap
+coverage/
+docs/
+dist/
