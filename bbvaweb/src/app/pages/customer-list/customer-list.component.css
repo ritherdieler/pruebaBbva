@@ -1,0 +1,40 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.clientListContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.clientListHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.clientListBody {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.mat-elevation-z8 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-paginator {
+  margin-top: 20px;
+}
