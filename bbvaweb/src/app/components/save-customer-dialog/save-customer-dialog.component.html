@@ -1,0 +1,29 @@
+<form class="example-form" [formGroup]="customerForm">
+
+  <mat-form-field>
+    <mat-label>Nombre Completo</mat-label>
+    <input matInput formControlName="names">
+
+    <mat-error *ngIf="customerForm.controls['names'].errors">
+      El valor es incorrecto
+    </mat-error>
+
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Edad</mat-label>
+    <input matInput formControlName="age" type="number">
+    <mat-error *ngIf="customerForm.controls['age'].errors">
+      El valor es incorrecto
+    </mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button [disabled]="customerForm.invalid" color="primary" (click)="saveCustomer()">
+    {{ (this.data && this.data.customer) ? 'Actualizar' : 'Registrar' }}
+  </button>
+
+</form>
+
+<!--<pre>-->
+<!--            {{ customerForm.value | json }}-->
+<!--</pre>-->
